@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('bg-desktop.png') center top fixed;
+  background-color: hsl(229, 57%, 11%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 0px bottom -100px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  padding-top: 55px;
+}
+
+h1 {
+  color: hsl(229, 57%, 11%);
+  padding: 19px;
+  font-size: 2.9rem;
+}
+
+p {
+  color: hsl(229, 7%, 55%);
+  font-weight: 700;
+}
+
+h2 {
+  display: inline-block;
+  color: hsl(224, 38%, 77%);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 48px;
+  margin-left: 45px;
+}
+
+span {
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+}
+
+.beginning {
+  color: hsl(243, 100%, 93%);
+}
+
+.finish {
+  color: hsl(243, 100%, 93%);
+}
+
+.left-box {
+  display: block;
+  border: 1px solid hsl(228, 56%, 26%);
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  border-top-right-radius: 120px;
+  box-shadow: 0px 9px 21px 1px rgba(0, 0, 0, 0.29);
+  width: 390px;
+  height: 230px;
+  padding: 50px;
+}
+
+.direction-1 {
+  display: flex;
+  margin-top: 30px;
+}
+
+.content-1 {
+  border: 1px solid hsl(229, 57%, 11%);
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  width: 52px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content-1:hover {
+  transition: all 0.8s;
+  opacity: 0.9;
+}
+
+.square-1 {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  padding-top: 8px;
+  padding-left: 14px;
+}
+
+.content-2 {
+  border: 1px solid hsl(229, 57%, 11%);
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  width: 52px;
+  height: 50px;
+  text-align: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.content-2:hover {
+  transition: all 0.8s;
+  opacity: 0.9;
+}
+
+.square-2 {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  padding-top: 13px;
+  padding-left: 12px;
+}
+
+.content-3 {
+  border: 1px solid hsl(229, 57%, 11%);
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  width: 52px;
+  height: 50px;
+  text-align: center;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.content-3:hover {
+  transition: all 0.8s;
+  opacity: 0.9;
+}
+
+.square-3 {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  padding-top: 14px;
+  padding-left: 12px;
+}
+
+.direction-2 {
+  display: flex;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding-left: 47px;
+  padding-top: 9px;
+}
+
+.finish {
+  margin-left: 470px;
+}
+
+.bubble-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 9px 21px -6px rgba(0, 0, 0, 0.29);
+  margin-right: 80px;
+  width: 200px;
+  height: 80px;
+  margin: 20px auto;
+  border: 4px solid hsl(60, 100%, 100%);
+  background-color: hsl(60, 100%, 100%);
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  left: 440px;
+  bottom: 25px;
+}
+
+.bubble-box::before {
+  transform: rotate(-0.75turn);
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 152px;
+  top: 57px;
+  border: 22px solid;
+  border-color: hsl(60, 100%, 100%) transparent transparent hsl(60, 100%, 100%);
+}
+
+.right-box {
+  display: block;
+  border: 1px solid hsl(228, 56%, 26%);
+  border-radius: 10px;
+  background-color: hsl(228, 56%, 26%);
+  box-shadow: 0px 9px 21px 1px rgba(0, 0, 0, 0.29);
+  width: 650px;
+  height: 182px;
+  margin-top: 48px;
+  margin-left: -160px;
+}
+
+.inner-box-1 {
+  border: 1px solid hsl(230, 55%, 18%);
+  background-color: hsl(230, 55%, 18%);
+  border-radius: 10px;
+  width: 550px;
+  height: 22px;
+  margin-left: 45px;
+  margin-top: 18px;
+}
+
+.inner-box-2 {
+  border: 0px solid hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  background: linear-gradient(80deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+  width: 428px;
+  height: 16px;
+  margin-left: 48px;
+  margin-top: -19px;
+}
+
+.inner-box-3 {
+  display: relative;
+  border: 1px solid hsl(60, 100%, 100%);
+  background-color: hsl(60, 100%, 100%);
+  height: 12px;
+  border-radius: 50%;
+  width: 12px;
+  margin-left: 462px;
+  margin-top: -14px;
+}
+
+.log {
+  width: 10rem;
+  cursor: pointer;
+}
+
+.log:hover {
+  transition: all 0.8s;
+  opacity: 0.5;
+}
